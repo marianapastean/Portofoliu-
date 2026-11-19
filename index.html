@@ -14,13 +14,21 @@
 </head>
 <body>
 
+<div class="curtain" id="curtain" aria-hidden="true"><img src="assets/logo.webp" alt="" width="120" height="120"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="cursor" id="cursor" aria-hidden="true"></div>
+
 <header class="nav" id="nav">
   <a class="nav__logo" href="#top" aria-label="Mariana Păștean — început"><img src="assets/logo.webp" alt="" width="44" height="44"></a>
   <nav class="nav__links" aria-label="Secțiuni">
-    <a href="#top">Home</a>
     <a href="#despre">Despre</a>
     <a href="#servicii">Servicii</a>
-    <a href="#contact">Contact</a>
+    <a href="#social">Social media</a>
+    <a href="#logo">Logo</a>
+    <a href="#landing">Landing page</a>
+    <a href="#grafic">Design grafic</a>
+    <a href="#strategie">Strategie</a>
+    <a href="#contact" class="nav__cta">Contact</a>
   </nav>
 </header>
 
@@ -37,23 +45,31 @@
 
 <section class="hero">
   <div class="hero__text">
-    <p class="eyebrow">Strategy • Growth • Branding</p>
+    <p class="eyebrow hero__eyebrow">Strategy • Growth • Branding</p>
     <h1 class="hero__name" aria-label="Mariana Păștean">
-      <span data-text="MARIANA">MARIANA</span>
-      <span data-text="PĂȘTEAN">PĂȘTEAN</span>
+      <span class="lines" aria-hidden="true">MARIANA</span>
+      <span class="lines" aria-hidden="true">PĂȘTEAN</span>
     </h1>
     <p class="hero__lede">Designer de brand și specialistă în marketing pentru businessuri care vor o imagine coerentă și mai multe oportunități online.</p>
-    <a class="btn" href="#contact" data-contact>Hai să discutăm despre proiectul tău</a>
+    <a class="btn magnetic hero__btn" href="#contact" data-contact>Hai să discutăm despre proiectul tău</a>
   </div>
   <div class="hero__photo tilt" id="tilt">
     <div class="halo"></div>
     <img src="assets/mariana.webp" alt="Mariana Păștean" width="507" height="939">
   </div>
+  <a class="scrollcue" href="#despre" aria-label="Derulează"><span></span></a>
 </section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Social media design</span><span>Logo și identitate vizuală</span><span>Landing page design</span><span>Design grafic</span><span>Copywriting și storytelling</span><span>Strategie de social media</span>
+    <span>Social media design</span><span>Logo și identitate vizuală</span><span>Landing page design</span><span>Design grafic</span><span>Copywriting și storytelling</span><span>Strategie de social media</span>
+  </div>
+</div>
 
 <section class="about" id="despre">
   <div class="wrap">
-    <h2 class="reveal">Despre mine</h2>
+    <h2 class="split">Despre mine</h2>
     <div class="about__grid">
       <div class="reveal">
         <p>Sunt Mariana Păștean, designer de brand și specialistă în marketing. Ajut businessurile să își clarifice imaginea, mesajul și modul în care se prezintă online.</p>
@@ -63,50 +79,185 @@
       <aside class="help reveal">
         <h3>Cum te pot ajuta?</h3>
         <p>Te ajut să transformi o idee, o ofertă sau un brand într-o comunicare vizuală coerentă, ușor de înțeles și potrivită pentru publicul tău.</p>
-        <a class="btn btn--small" href="#contact" data-contact>Spune-mi ce vrei să construim ➔</a>
+        <a class="btn btn--small magnetic" href="#contact" data-contact>Spune-mi ce vrei să construim ➔</a>
       </aside>
     </div>
+    <ul class="stats">
+      <li class="reveal"><b><span data-count="6">6</span>+</b><span>ani în resurse umane</span></li>
+      <li class="reveal"><b><span data-count="2">2</span></b><span>ani în project management</span></li>
+      <li class="reveal"><b><span data-count="2025" data-nogroup>2025</span></b><span>începutul activității în marketing</span></li>
+    </ul>
   </div>
 </section>
 
 <section class="strategy">
   <div class="wrap">
-    <h2 class="reveal big">Designul bun nu este doar decor.<br><em>Este parte din strategie.</em></h2>
-    <div class="strategy__body reveal">
-      <p>Un brand nu are nevoie doar de un logo sau de postări frumoase. Are nevoie de o imagine coerentă, un mesaj clar și materiale care susțin obiectivele businessului.</p>
-      <p>De aceea, abordez fiecare proiect pornind de la trei întrebări:</p>
-      <ol class="questions">
-        <li><span>01</span>Ce vrei să transmiți?</li>
-        <li><span>02</span>Cui te adresezi?</li>
-        <li><span>03</span>Care este următorul pas pe care vrei să îl facă oamenii?</li>
+    <h2 class="split big">Designul bun nu este doar decor.<br><em>Este parte din strategie.</em></h2>
+    <div class="strategy__body">
+      <p class="reveal">Un brand nu are nevoie doar de un logo sau de postări frumoase. Are nevoie de o imagine coerentă, un mesaj clar și materiale care susțin obiectivele businessului.</p>
+      <p class="reveal">De aceea, abordez fiecare proiect pornind de la trei întrebări:</p>
+      <ol class="questions" id="questions">
+        <li class="reveal"><span>01</span>Ce vrei să transmiți?</li>
+        <li class="reveal"><span>02</span>Cui te adresezi?</li>
+        <li class="reveal"><span>03</span>Care este următorul pas pe care vrei să îl facă oamenii?</li>
       </ol>
-      <p>Rezultatul este un design care nu doar atrage atenția, ci ajută oamenii să înțeleagă mai repede cine ești și ce oferi.</p>
-      <a class="btn btn--ghost" href="#servicii">Vezi serviciile</a>
+      <p class="reveal">Rezultatul este un design care nu doar atrage atenția, ci ajută oamenii să înțeleagă mai repede cine ești și ce oferi.</p>
+      <a class="btn btn--ghost magnetic reveal" href="#servicii">Vezi serviciile</a>
     </div>
   </div>
 </section>
 
 <section class="services" id="servicii">
   <div class="wrap">
-    <h2 class="reveal big">Servicii pentru branduri care vor să comunice mai bine</h2>
+    <h2 class="split big">Servicii pentru branduri care vor să comunice mai bine</h2>
     <p class="services__intro reveal">Ofer servicii de design și marketing pentru businessuri, branduri personale și proiecte care au nevoie de o prezență mai clară și mai profesionistă.</p>
     <div class="cards">
-      <article class="card tilt reveal"><span class="card__n">01</span><h3>Social media design</h3><p>Postări, carusele și stories create pentru o comunicare coerentă, actuală și ușor de recunoscut.</p><a href="#contact" data-contact data-subject="Social media design">Vezi serviciul →</a></article>
-      <article class="card tilt reveal"><span class="card__n">02</span><h3>Logo și identitate vizuală</h3><p>Logo-uri și direcții vizuale care ajută brandul să fie memorabil și consecvent.</p><a href="#contact" data-contact data-subject="Logo și identitate vizuală">Vezi serviciul →</a></article>
-      <article class="card tilt reveal"><span class="card__n">03</span><h3>Landing page design</h3><p>Pagini clare și bine structurate pentru servicii, campanii, lansări și colectare de lead-uri.</p><a href="#contact" data-contact data-subject="Landing page design">Vezi serviciul →</a></article>
-      <article class="card tilt reveal"><span class="card__n">04</span><h3>Design grafic</h3><p>Flyere, meniuri, broșuri, bannere și alte materiale pentru online și print.</p><a href="#contact" data-contact data-subject="Design grafic">Vezi serviciul →</a></article>
-      <article class="card tilt reveal"><span class="card__n">05</span><h3>Strategie de social media</h3><p>Direcții de conținut și idei organizate în jurul obiectivelor brandului.</p><a href="#contact" data-contact data-subject="Strategie de social media">Vezi serviciul →</a></article>
-      <article class="card card--accent tilt reveal"><span class="card__n">06</span><h3>Ofertă personalizată</h3><p>Combinăm serviciile potrivite pentru proiectul și obiectivele tale.</p><a href="#contact" data-contact data-subject="Ofertă personalizată">Solicită ofertă →</a></article>
+<article class="card tilt reveal"><span class="card__n">01</span><h3>Social media design</h3><p>Postări, carusele și stories create pentru o comunicare coerentă, actuală și ușor de recunoscut.</p><a href="#social">Vezi proiectele →</a><i class="glare"></i></article>
+<article class="card tilt reveal"><span class="card__n">02</span><h3>Logo și identitate vizuală</h3><p>Logo-uri și direcții vizuale care ajută brandul să fie memorabil și consecvent.</p><a href="#logo">Vezi proiectele →</a><i class="glare"></i></article>
+<article class="card tilt reveal"><span class="card__n">03</span><h3>Landing page design</h3><p>Pagini clare și bine structurate pentru servicii, campanii, lansări și colectare de lead-uri.</p><a href="#landing">Vezi proiectele →</a><i class="glare"></i></article>
+<article class="card tilt reveal"><span class="card__n">04</span><h3>Design grafic</h3><p>Flyere, meniuri, broșuri, bannere și alte materiale pentru online și print.</p><a href="#grafic">Vezi proiectele →</a><i class="glare"></i></article>
+<article class="card tilt reveal"><span class="card__n">05</span><h3>Copywriting și storytelling</h3><p>Texte care explică oferta, susțin brandul și creează o conexiune mai bună cu publicul.</p><a href="#contact" data-contact data-subject="Copywriting și storytelling">Discută proiectul →</a><i class="glare"></i></article>
+<article class="card tilt reveal"><span class="card__n">06</span><h3>Strategie de social media</h3><p>Direcții de conținut și idei organizate în jurul obiectivelor brandului.</p><a href="#strategie">Vezi serviciul →</a><i class="glare"></i></article>
+<article class="card tilt reveal card--accent"><span class="card__n">07</span><h3>Ofertă personalizată</h3><p>Combinăm serviciile potrivite pentru proiectul și obiectivele tale.</p><a href="#contact" data-contact data-subject="Ofertă personalizată">Solicită ofertă →</a><i class="glare"></i></article>
+
     </div>
   </div>
 </section>
 
+<section class="svc" id="social">
+<div class="wrap svc__grid">
+<div class="svc__info">
+<span class="svc__n" aria-hidden="true">01</span>
+<p class="eyebrow">Social media</p>
+<h2 class="split big">Social media care arată bine și are un scop clar.</h2>
+<p class="svc__intro reveal">Creez conținut vizual și direcții de comunicare pentru branduri care vor să fie prezente constant în online, fără să posteze la întâmplare.</p>
+<div class="svc__cols">
+<div class="reveal"><h3>Ce pot crea</h3><ul class="ticks"><li>Postări pentru Facebook și Instagram</li><li>Carusele educaționale sau de prezentare</li><li>Stories</li><li>Vizualuri pentru oferte și campanii</li><li>Template-uri reutilizabile</li><li>Direcții vizuale pentru conținut</li><li>Texte pentru postări și storytelling</li></ul></div>
+<div class="reveal"><h3>Pentru cine este</h3><p>Acest serviciu este potrivit pentru businessuri și branduri personale care vor o prezență mai clară, mai consecventă și mai profesionistă în social media.</p><h3>Cum te ajută</h3><p>Un conținut bine construit te ajută să explici mai bine ceea ce oferi, să construiești încredere și să transformi atenția în conversații cu potențiali clienți.</p></div>
+</div>
+<div class="svc__cta reveal"><p class="svc__q">Ai nevoie de un conținut mai clar pentru social media?</p><a class="btn magnetic" href="#contact" data-contact data-subject="Social media">Solicită ofertă pentru social media ➔</a><p class="note">Spune-mi ce promovezi, iar eu îți recomand direcția potrivită.</p></div>
+</div>
+<div class="gallery" data-gallery="social">
+<h3 class="gallery__t">Proiecte</h3>
+<div class="masonry">
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 1"><span class="shot__in"><img src="assets/p/social-01.webp" width="900" height="900" loading="lazy" alt="Proiect social, imaginea 1"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 2"><span class="shot__in"><img src="assets/p/social-02.webp" width="720" height="1280" loading="lazy" alt="Proiect social, imaginea 2"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 3"><span class="shot__in"><img src="assets/p/social-03.webp" width="720" height="1280" loading="lazy" alt="Proiect social, imaginea 3"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 4"><span class="shot__in"><img src="assets/p/social-04.webp" width="900" height="900" loading="lazy" alt="Proiect social, imaginea 4"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 5"><span class="shot__in"><img src="assets/p/social-05.webp" width="600" height="600" loading="lazy" alt="Proiect social, imaginea 5"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 6"><span class="shot__in"><img src="assets/p/social-06.webp" width="600" height="600" loading="lazy" alt="Proiect social, imaginea 6"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 7"><span class="shot__in"><img src="assets/p/social-07.webp" width="432" height="540" loading="lazy" alt="Proiect social, imaginea 7"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 8"><span class="shot__in"><img src="assets/p/social-08.webp" width="564" height="473" loading="lazy" alt="Proiect social, imaginea 8"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 9"><span class="shot__in"><img src="assets/p/social-09.webp" width="564" height="473" loading="lazy" alt="Proiect social, imaginea 9"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 10"><span class="shot__in"><img src="assets/p/social-10.webp" width="432" height="540" loading="lazy" alt="Proiect social, imaginea 10"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 11"><span class="shot__in"><img src="assets/p/social-11.webp" width="900" height="900" loading="lazy" alt="Proiect social, imaginea 11"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 12"><span class="shot__in"><img src="assets/p/social-12.webp" width="564" height="473" loading="lazy" alt="Proiect social, imaginea 12"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 13"><span class="shot__in"><img src="assets/p/social-13.webp" width="854" height="1280" loading="lazy" alt="Proiect social, imaginea 13"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 14"><span class="shot__in"><img src="assets/p/social-14.webp" width="720" height="1280" loading="lazy" alt="Proiect social, imaginea 14"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 15"><span class="shot__in"><img src="assets/p/social-15.webp" width="900" height="900" loading="lazy" alt="Proiect social, imaginea 15"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 16"><span class="shot__in"><img src="assets/p/social-16.webp" width="432" height="540" loading="lazy" alt="Proiect social, imaginea 16"></span></button>
+<button class="shot" type="button" data-group="social" aria-label="Mărește proiectul 17"><span class="shot__in"><img src="assets/p/social-17.webp" width="432" height="540" loading="lazy" alt="Proiect social, imaginea 17"></span></button>
+</div></div>
+</div>
+</section>
+<section class="svc" id="logo">
+<div class="wrap svc__grid">
+<div class="svc__info">
+<span class="svc__n" aria-hidden="true">02</span>
+<p class="eyebrow">Logo și identitate vizuală</p>
+<h2 class="split big">O identitate vizuală pe care oamenii o pot recunoaște</h2>
+<p class="svc__intro reveal">Creez logo-uri și direcții vizuale pentru branduri care vor să transmită profesionalism, claritate și personalitate încă de la prima interacțiune.</p>
+<div class="svc__cols">
+<div class="reveal"><h3>Ce pot crea</h3><ul class="ticks"><li>Logo</li><li>Variante de logo</li><li>Paletă cromatică</li><li>Combinații de fonturi</li><li>Elemente grafice</li><li>Direcție vizuală pentru social media</li><li>Materiale de bază pentru brand</li></ul></div>
+<div class="reveal"><h3>Pentru cine este</h3><p>Pentru branduri noi, antreprenori și businessuri care au evoluat, dar a căror imagine nu mai reflectă ceea ce oferă.</p><h3>Cum te ajută</h3><p>O identitate vizuală coerentă face brandul mai ușor de recunoscut, mai profesionist și mai consecvent pe toate canalele.</p></div>
+</div>
+<div class="svc__cta reveal"><p class="svc__q">Brandul tău are nevoie de o imagine mai clară?</p><a class="btn magnetic" href="#contact" data-contact data-subject="Logo și identitate vizuală">Discută proiectul de branding ➔</a><p class="note">Îți răspund cu pașii potriviți pentru proiectul tău.</p></div>
+</div>
+<div class="gallery gallery--light" data-gallery="logo">
+<h3 class="gallery__t">Proiecte</h3>
+<div class="masonry">
+<button class="shot" type="button" data-group="logo" aria-label="Mărește proiectul 1"><span class="shot__in"><img src="assets/p/logo-01.webp" width="540" height="675" loading="lazy" alt="Proiect logo, imaginea 1"></span></button>
+<button class="shot" type="button" data-group="logo" aria-label="Mărește proiectul 2"><span class="shot__in"><img src="assets/p/logo-02.webp" width="648" height="810" loading="lazy" alt="Proiect logo, imaginea 2"></span></button>
+<button class="shot" type="button" data-group="logo" aria-label="Mărește proiectul 3"><span class="shot__in"><img src="assets/p/logo-03.webp" width="800" height="800" loading="lazy" alt="Proiect logo, imaginea 3"></span></button>
+<button class="shot" type="button" data-group="logo" aria-label="Mărește proiectul 4"><span class="shot__in"><img src="assets/p/logo-04.webp" width="648" height="810" loading="lazy" alt="Proiect logo, imaginea 4"></span></button>
+<button class="shot" type="button" data-group="logo" aria-label="Mărește proiectul 5"><span class="shot__in"><img src="assets/p/logo-05.webp" width="648" height="810" loading="lazy" alt="Proiect logo, imaginea 5"></span></button>
+<button class="shot" type="button" data-group="logo" aria-label="Mărește proiectul 6"><span class="shot__in"><img src="assets/p/logo-06.webp" width="600" height="600" loading="lazy" alt="Proiect logo, imaginea 6"></span></button>
+</div></div>
+</div>
+</section>
+<section class="svc" id="landing">
+<div class="wrap svc__grid">
+<div class="svc__info">
+<span class="svc__n" aria-hidden="true">03</span>
+<p class="eyebrow">Landing page design</p>
+<h2 class="split big">Landing page-uri care explică oferta și ghidează oamenii spre acțiune</h2>
+<p class="svc__intro reveal">Creez design pentru landing page-uri destinate serviciilor, campaniilor, lansărilor și proiectelor care au nevoie de o pagină clară pentru prezentare sau colectare de lead-uri.</p>
+<div class="svc__cols">
+<div class="reveal"><h3>Ce include</h3><ul class="ticks"><li>Structură vizuală clară</li><li>Organizarea secțiunilor</li><li>Ierarhie vizuală</li><li>Prezentarea serviciilor</li><li>Zone pentru testimoniale</li><li>CTA-uri vizibile</li><li>Design adaptat identității brandului</li></ul></div>
+<div class="reveal"><h3>Pentru cine este</h3><p>Pentru antreprenori și businessuri care au o ofertă bună, dar nu reușesc să o explice simplu și convingător într-o singură pagină.</p><h3>Cum te ajută</h3><p>Un landing page bine organizată reduce confuzia, prezintă oferta într-o ordine logică și îi arată vizitatorului care este pasul următor.</p></div>
+</div>
+<div class="svc__cta reveal"><p class="svc__q">Ai nevoie de o pagină care să îți prezinte mai bine oferta?</p><a class="btn magnetic" href="#contact" data-contact data-subject="Landing page">Solicită ofertă pentru landing page ➔</a><p class="note">Trimite-mi oferta ta și îți spun ce structură ar putea funcționa cel mai bine.</p></div>
+</div>
+<div class="gallery" data-gallery="landing">
+<h3 class="gallery__t">Proiecte</h3>
+<div class="masonry">
+<button class="shot" type="button" data-group="landing" aria-label="Mărește proiectul 1"><span class="shot__in"><img src="assets/p/landing-01.webp" width="239" height="467" loading="lazy" alt="Proiect landing, imaginea 1"></span></button>
+<button class="shot" type="button" data-group="landing" aria-label="Mărește proiectul 2"><span class="shot__in"><img src="assets/p/landing-02.webp" width="362" height="590" loading="lazy" alt="Proiect landing, imaginea 2"></span></button>
+</div></div>
+</div>
+</section>
+<section class="svc" id="grafic">
+<div class="wrap svc__grid">
+<div class="svc__info">
+<span class="svc__n" aria-hidden="true">04</span>
+<p class="eyebrow">Design grafic</p>
+<h2 class="split big">Materiale grafice care fac mesajul mai ușor de înțeles</h2>
+<p class="svc__intro reveal">Creez materiale grafice pentru promovare, prezentare și comunicare vizuală, atât pentru online, cât și pentru print.</p>
+<div class="svc__cols">
+<div class="reveal"><h3>Ce pot crea</h3><ul class="ticks"><li>Meniuri</li><li>Broșuri</li><li>Bannere</li><li>Cărți de vizită</li><li>Prezentări</li><li>Materiale promoționale</li><li>Vizualuri pentru campanii</li></ul></div>
+<div class="reveal"><h3>Pentru cine este</h3><p>Pentru businessuri care au nevoie de materiale clare, atractive și aliniate cu imaginea brandului.</p><h3>Cum te ajută</h3><p>Materialele potrivite susțin oferta, cresc claritatea mesajului și te ajută să ai o imagine unitară în toate punctele de contact cu publicul.</p></div>
+</div>
+<div class="svc__cta reveal"><p class="svc__q">Ai nevoie de un material grafic pentru businessul tău?</p><a class="btn magnetic" href="#contact" data-contact data-subject="Design grafic">Cere o ofertă personalizată ➔</a><p class="note">Trimite-mi detaliile proiectului și revin cu o recomandare.</p></div>
+</div>
+<div class="gallery" data-gallery="grafic">
+<h3 class="gallery__t">Proiecte</h3>
+<div class="masonry">
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 1"><span class="shot__in"><img src="assets/p/grafic-01.webp" width="582" height="423" loading="lazy" alt="Proiect grafic, imaginea 1"></span></button>
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 2"><span class="shot__in"><img src="assets/p/grafic-02.webp" width="900" height="506" loading="lazy" alt="Proiect grafic, imaginea 2"></span></button>
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 3"><span class="shot__in"><img src="assets/p/grafic-03.webp" width="531" height="399" loading="lazy" alt="Proiect grafic, imaginea 3"></span></button>
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 4"><span class="shot__in"><img src="assets/p/grafic-04.webp" width="586" height="432" loading="lazy" alt="Proiect grafic, imaginea 4"></span></button>
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 5"><span class="shot__in"><img src="assets/p/grafic-05.webp" width="579" height="444" loading="lazy" alt="Proiect grafic, imaginea 5"></span></button>
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 6"><span class="shot__in"><img src="assets/p/grafic-06.webp" width="481" height="502" loading="lazy" alt="Proiect grafic, imaginea 6"></span></button>
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 7"><span class="shot__in"><img src="assets/p/grafic-07.webp" width="378" height="378" loading="lazy" alt="Proiect grafic, imaginea 7"></span></button>
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 8"><span class="shot__in"><img src="assets/p/grafic-08.webp" width="560" height="448" loading="lazy" alt="Proiect grafic, imaginea 8"></span></button>
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 9"><span class="shot__in"><img src="assets/p/grafic-09.webp" width="751" height="398" loading="lazy" alt="Proiect grafic, imaginea 9"></span></button>
+<button class="shot" type="button" data-group="grafic" aria-label="Mărește proiectul 10"><span class="shot__in"><img src="assets/p/grafic-10.webp" width="900" height="506" loading="lazy" alt="Proiect grafic, imaginea 10"></span></button>
+</div></div>
+</div>
+</section>
+<section class="svc" id="strategie">
+<div class="wrap svc__grid">
+<div class="svc__info">
+<span class="svc__n" aria-hidden="true">05</span>
+<p class="eyebrow">Strategie de social media</p>
+<h2 class="split big">O direcție clară pentru conținutul brandului tău</h2>
+<p class="svc__intro reveal">Te ajut să îți organizezi comunicarea în social media în jurul unor obiective clare, nu doar în jurul unui calendar de postări.</p>
+<div class="svc__cols">
+<div class="reveal"><h3>Ce pot crea</h3><ul class="ticks"><li>Analiză de brand și public</li><li>Direcții de conținut</li><li>Piloni de comunicare</li><li>Idei de postări</li><li>Recomandări de formate</li><li>CTA-uri potrivite</li><li>Structură pentru campanii</li></ul></div>
+<div class="reveal"><h3>Pentru cine este</h3><p>Pentru businessuri care postează fără o direcție clară, nu știu ce să comunice sau vor să transforme social media într-un canal mai util pentru business.</p><h3>Cum te ajută</h3><p>O strategie bună îți oferă claritate, consecvență și un mod mai organizat de a transforma conținutul în vizibilitate și conversații.</p></div>
+</div>
+<div class="svc__cta reveal"><p class="svc__q">Vrei o direcție clară pentru social media?</p><a class="btn magnetic" href="#contact" data-contact data-subject="Strategie de social media">Solicită o sesiune de strategie ➔</a><p class="note">Trimite-mi detaliile proiectului și revin cu o recomandare.</p></div>
+</div>
+<div class="gallery gallery--empty"><div class="orb" aria-hidden="true"></div><p class="reveal">Strategia se construiește pe baza obiectivelor tale. Spune-mi ce promovezi și pornim de acolo.</p></div>
+</div>
+</section>
+
 <section class="contact" id="contact">
   <div class="wrap">
-    <h2 class="reveal big">Hai să construim <em>ceva coerent.</em></h2>
+    <h2 class="split big">Hai să construim <em>ceva coerent.</em></h2>
     <p class="reveal">Spune-mi despre proiectul tău și revin cu un răspuns.</p>
-    <p class="reveal"><a class="btn" id="mail" href="#contact">Solicită ofertă</a></p>
-    <ul class="social reveal" id="social" aria-label="Social media"></ul>
+    <p class="reveal"><a class="btn magnetic" id="mail" href="#contact">Solicită ofertă</a></p>
+    <ul class="social reveal" id="social-links" aria-label="Social media"></ul>
   </div>
 </section>
 
@@ -116,6 +267,14 @@
   <img src="assets/logo.webp" alt="" width="40" height="40">
   <span>© <span id="yr"></span> Mariana Păștean</span>
 </footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Previzualizare proiect" hidden>
+  <button class="lb__x" type="button" aria-label="Închide">✕</button>
+  <button class="lb__nav lb__prev" type="button" aria-label="Anterior">‹</button>
+  <img class="lb__img" id="lbimg" alt="">
+  <button class="lb__nav lb__next" type="button" aria-label="Următorul">›</button>
+  <span class="lb__count" id="lbcount"></span>
+</div>
 
 <script src="script.js"></script>
 </body>
